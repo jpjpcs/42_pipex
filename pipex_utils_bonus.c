@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   pipex_utils_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaosilva <joaosilva@student.42.fr>        +#+  +:+       +#+        */
+/*   By: jode-jes <jode-jes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 12:19:03 by joaosilva         #+#    #+#             */
-/*   Updated: 2024/03/26 20:29:12 by joaosilva        ###   ########.fr       */
+/*   Updated: 2024/03/27 18:55:24 by jode-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,7 @@ void	ft_here_doc(char *eof)
 	while (line && (ft_strncmp(line, eof, ft_strlen(eof)) || ft_strclen(line,
 				'\n') != ft_strlen(eof)))
 	{
-		write(fd_here_doc, line, ft_strlen(line));
-		write(fd_here_doc, "\n", 1);
+		ft_putstr_fd(line, fd_here_doc);
 		free(line);
 		ft_printf("> ");
 		line = get_next_line(0);

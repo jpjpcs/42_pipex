@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   pipex.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaosilva <joaosilva@student.42.fr>        +#+  +:+       +#+        */
+/*   By: jode-jes <jode-jes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 10:57:05 by joaosilva         #+#    #+#             */
-/*   Updated: 2024/03/26 18:49:09 by joaosilva        ###   ########.fr       */
+/*   Updated: 2024/03/27 19:17:35 by jode-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -865,5 +865,5 @@ int	main(int ac, char **av, char **envp)
 	}
 	else
 		ft_putstr_fd("Error: invalid number of arguments\n", STDERR_FILENO);
-	return (0);
+	return (1);
 }

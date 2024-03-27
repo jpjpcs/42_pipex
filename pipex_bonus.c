@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   pipex_bonus.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaosilva <joaosilva@student.42.fr>        +#+  +:+       +#+        */
+/*   By: jode-jes <jode-jes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 12:18:59 by joaosilva         #+#    #+#             */
-/*   Updated: 2024/03/26 20:09:24 by joaosilva        ###   ########.fr       */
+/*   Updated: 2024/03/27 19:17:43 by jode-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -297,5 +297,5 @@ int	main(int ac, char **av, char **envp)
 	}
 	else
 		ft_putstr_fd("Error: Invalid number of arguments\n", 2);
-	return (0);
+	return (1);
 }
